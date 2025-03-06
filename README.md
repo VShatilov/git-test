@@ -31,3 +31,28 @@ git ls-tree 98ca1e504
 
 git show d96d00
 (покажет содержимое файла)
+
+git restore -- README.md
+(откатит изменения ЛОК файла)
+
+git restore .
+(откатит ЛОК изменения в файлах папки и вложенных в неё, но не удалит новые файлы)
+
+git clean -xdf
+(удалит новые ЛОК файлы.
+x:игнорить правила
+d:удалить и папки тоже
+f:force принудительно, без f не удалит ничего)
+
+git reset -- song.txt
+или
+git restore -- staged song.txt
+(вернёт файл из IND в ЛОК а оттуда можно git restore)
+
+git commit --amend -m"add text to commit"
+(ЗАМЕНИТ текст последнего коммита)
+
+ git reset HEAD^^
+ или
+ git reset HEAD~2
+ (удалит 2 последних коммита)
