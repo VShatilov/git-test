@@ -56,3 +56,4 @@ git commit --amend -m"add text to commit"
  или
  git reset HEAD~2
  (удалит 2 последних коммита)
+ 
