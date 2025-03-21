@@ -58,6 +58,8 @@ git commit --amend -m"add text to commit"
  (удалит 2 последних коммита из IND)
  
 git reset --soft HEAD~1
-(удалит один коммит из IND в stage changed)
+(удалит один коммит из IND не удаляет, перекидывает в stage changed, ждёт комит)
 git reset --mixed HEAD^
 (удалит один коммит из IND в Unstage changes)
+git reset --рфкв HEAD^
+(удалит один коммит как не было)
