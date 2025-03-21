@@ -55,5 +55,9 @@ git commit --amend -m"add text to commit"
  git reset HEAD^^
  или
  git reset HEAD~2
- (удалит 2 последних коммита)
+ (удалит 2 последних коммита из IND)
  
+git reset --soft HEAD~1
+(удалит один коммит из IND в stage changed)
+git reset --mixed HEAD^
+(удалит один коммит из IND в Unstage changes)
