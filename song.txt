@@ -2,9 +2,3 @@ first
 second
 third
 fours
-five
-six
-seven
-eight
-9
-10
