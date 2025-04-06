@@ -44,22 +44,27 @@ x:игнорить правила
 d:удалить и папки тоже
 f:force принудительно, без f не удалит ничего)
 
-git reset -- song.txt
-или
-git restore -- staged song.txt
-(вернёт файл из IND в ЛОК а оттуда можно git restore)
+ОТКАТ КОММИТОВ
+	git reset -- song.txt
+	или
+	git restore -- staged song.txt
+	(вернёт файл из IND в ЛОК а оттуда можно git restore)
 
-git commit --amend -m"add text to commit"
-(ЗАМЕНИТ текст последнего коммита)
+	git commit --amend -m"add text to commit"
+	(ЗАМЕНИТ текст последнего коммита)
 
- git reset HEAD^^
- или
- git reset HEAD~2
- (удалит 2 последних коммита из IND)
+	git reset HEAD^^
+	или
+	git reset HEAD~2
+	(удалит 2 последних коммита из IND)
  
-git reset --soft HEAD~1
-(удалит один коммит из IND не удаляет, перекидывает в stage changed, ждёт комит)
-git reset --mixed HEAD^
-(удалит один коммит из IND в Unstage changes)
-git reset --рфкв HEAD^
-(удалит один коммит как не было)
+	git reset --soft HEAD~1
+	(удалит один коммит из IND не удаляет, перекидывает в stage changed, ждёт комит)
+	git reset --mixed HEAD^
+	(удалит один коммит из IND в Unstage changes)
+	git reset --рфкв HEAD^
+	(удалит один коммит как не было)
+
+ОТКАТ ПУШЕЙ
+	git revert d6061125efcb4015bddd298d648ea02b91141014
+	(откроется подменю - жму insert - могу добавить текст - добавляю - жму ESC
