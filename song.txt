@@ -9,3 +9,7 @@ first commit in feature
 second
 third
 Main commit
+
+feature
+feature2
+
